@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UniversityInfo</name>
+    </assembly>
+    <members>
+        <member name="M:UniversityInfo.Controllers.ValuesController.Get">
+            <summary>
+            test
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

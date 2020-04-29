@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MentorEntrant</name>
+    </assembly>
+    <members>
+        <member name="M:UniversityInfo.Controllers.AccessTokensController.ValidateRefreshTokenAsync(UniversityInfo.Model.RefreshTokenCheckModel)">
+            <summary>
+            Обновить токен по рефрешу
+            </summary>
+            <param name="refreshTokenCheck">accessToken</param>   
+        </member>
+        <member name="M:UniversityInfo.Controllers.FacultyController.GetByUniversityAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="universityId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UniversityInfo.Controllers.SpecializationController.GetBySpecialityAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="specialityId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UniversityInfo.Controllers.SpecialtyController.GetByCityAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="facultyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UniversityInfo.Controllers.UniversityController.GetByCityAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="cityId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
