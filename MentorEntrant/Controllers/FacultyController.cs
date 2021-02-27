@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.Model;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.Model;
 
-namespace UniversityInfo.Controllers
+namespace MentorAbiturienta.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]

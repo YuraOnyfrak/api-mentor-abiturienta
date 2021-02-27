@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.DAL.Abstraction.Auth;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Abstraction.Auth;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.DAL.Implementation.Auth
+namespace MentorAbiturienta.DAL.Implementation.Auth
 {
   public class ValidationTicketRepository : GenericRepository<ValidationTicket>, IValidationTicketRepository
   {

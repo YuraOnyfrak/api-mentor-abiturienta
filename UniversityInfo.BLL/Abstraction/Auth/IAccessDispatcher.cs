@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.DTO;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.BLL.DTO;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.BLL.Abstraction
+namespace MentorAbiturienta.BLL.Abstraction
 {
   public interface IAccessDispatcher
   {

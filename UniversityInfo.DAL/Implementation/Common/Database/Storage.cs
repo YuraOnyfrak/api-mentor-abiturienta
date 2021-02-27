@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.Shared;
+using MentorAbiturienta.Shared;
 
-namespace UniversityInfo.DAL
+namespace MentorAbiturienta.DAL
 {
   public class Storage : IStorage
   {

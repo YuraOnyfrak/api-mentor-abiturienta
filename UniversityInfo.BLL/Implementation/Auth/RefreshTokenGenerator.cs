@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace UniversityInfo.BLL.Implementation.Auth
+namespace MentorAbiturienta.BLL.Implementation.Auth
 {
   public class RefreshTokenGenerator
   {

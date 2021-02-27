@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.DAL.Abstraction
+namespace MentorAbiturienta.DAL.Abstraction
 {
   public interface ISpecialityRepository : IGenericRepository<Speciality>
   {

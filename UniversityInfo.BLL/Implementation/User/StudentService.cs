@@ -1,15 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.BLL.Abstraction.Auth;
-using UniversityInfo.BLL.DTO;
-using UniversityInfo.DAL;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Domain;
-using UniversityInfo.Shared.Exceptions;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.BLL.Abstraction.Auth;
+using MentorAbiturienta.BLL.DTO;
+using MentorAbiturienta.DAL;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Domain;
+using MentorAbiturienta.Shared.Exceptions;
+using MentorAbiturienta.Model;
+using System.Collections.Generic;
 
-namespace UniversityInfo.BLL.Implementation
+namespace MentorAbiturienta.BLL.Implementation
 {
   public class StudentService : IStudentService
   {
@@ -32,7 +34,7 @@ namespace UniversityInfo.BLL.Implementation
         public async Task<CreatedStudentDTO> CreateAsync(CreateStudentDTO student)
         {
           User user = _userRepository.Get().Include(s => s.Student)
-                          .FirstOrDefault(s => s.Student.TelegramUsername == student.TelegramUsername);
+                          .FirstOrDefault(s => s.Student.TelegramId == student.TelegramId);
 
           if (user is null)
           {
@@ -66,6 +68,13 @@ namespace UniversityInfo.BLL.Implementation
                               .FirstOrDefault(s => s.Id == _accessProvider.CurrentUserId.Value);
 
             return new StudentDTO(user);
+        }
+
+        public async Task<StudentDTO> SearchAsync(SearchStudentModel searchStudentModel)
+        {
+            IEnumerable<User> user =  await _userRepository.SearchAsync(searchStudentModel);
+
+            return new StudentDTO(user.First());
         }
 
         public async Task<CreatedStudentDTO> UpdateAsync(UpdateStudentDTO student)

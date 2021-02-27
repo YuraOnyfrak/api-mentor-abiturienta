@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UniversityInfo.Services.Abstractions;
+using MentorAbiturienta.Services.Abstractions;
 
-namespace UniversityInfo.Services.Concrete
+namespace MentorAbiturienta.Services.Concrete
 {
   public class MemoryCacheService : IMemoryCacheService
   {

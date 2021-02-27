@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.DTO;
+using MentorAbiturienta.BLL.DTO;
 
-namespace UniversityInfo.BLL.Abstraction
+namespace MentorAbiturienta.BLL.Abstraction
 {
   public interface ISpecializationService
   {

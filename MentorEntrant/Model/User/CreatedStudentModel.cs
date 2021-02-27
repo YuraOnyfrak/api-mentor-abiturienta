@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.DTO;
+using MentorAbiturienta.BLL.DTO;
 
-namespace UniversityInfo.Model
+namespace MentorAbiturienta.Model
 {
   public class CreatedStudentModel
   {

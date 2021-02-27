@@ -3,7 +3,7 @@
 //using System.Collections.Generic;
 //using System.Text;
 
-//namespace UniversityInfo.Shared.Extension
+//namespace MentorAbiturienta.Shared.Extension
 //{
 //  public static class ServiceCollectionExtensions
 //  {

@@ -1,4 +1,4 @@
-﻿namespace UniversityInfo.Shared.Enums
+﻿namespace MentorAbiturienta.Shared.Enums
 {
   public enum PermissionType
   {

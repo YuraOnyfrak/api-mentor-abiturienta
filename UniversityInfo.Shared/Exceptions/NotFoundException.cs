@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniversityInfo.Shared.Exceptions
+namespace MentorAbiturienta.Shared.Exceptions
 {
   public class NotFoundException : Exception
   {

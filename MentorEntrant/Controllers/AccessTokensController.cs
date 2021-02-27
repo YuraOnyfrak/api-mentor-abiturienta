@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.BLL.Abstraction.Auth;
-using UniversityInfo.BLL.DTO;
-using UniversityInfo.DAL;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Abstraction.Auth;
-using UniversityInfo.DAL.Domain;
-using UniversityInfo.Model;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.BLL.Abstraction.Auth;
+using MentorAbiturienta.BLL.DTO;
+using MentorAbiturienta.DAL;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Abstraction.Auth;
+using MentorAbiturienta.DAL.Domain;
+using MentorAbiturienta.Model;
 
-namespace UniversityInfo.Controllers
+namespace MentorAbiturienta.Controllers
 {
   [AllowAnonymous]
   [Route("api/v1/accesstokens")]

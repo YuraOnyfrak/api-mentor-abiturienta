@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace UniversityInfo.Shared
+namespace MentorAbiturienta.Shared
 {
   public static class ExtensionManager
   {

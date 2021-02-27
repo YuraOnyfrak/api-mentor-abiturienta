@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using UniversityInfo.DAL.Domain.Common;
-using UniversityInfo.Shared.Enums;
+using MentorAbiturienta.DAL.Domain.Common;
+using MentorAbiturienta.Shared.Enums;
 
-namespace UniversityInfo.DAL.Domain
+namespace MentorAbiturienta.DAL.Domain
 {
   public class Student : Identifiable
   {
@@ -23,5 +23,6 @@ namespace UniversityInfo.DAL.Domain
     public Faculty Faculty { get; set; }
     public SpecialityByFaculty SpecialityByFaculty { get; set; }
     public Specialization Specialization { get; set; }
+    public User User { get; set; }
   }
 }

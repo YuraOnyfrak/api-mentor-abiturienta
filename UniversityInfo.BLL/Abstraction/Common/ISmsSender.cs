@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UniversityInfo.BLL.DTO;
+using MentorAbiturienta.BLL.DTO;
 
-namespace UniversityInfo.BLL.Abstraction
+namespace MentorAbiturienta.BLL.Abstraction
 {
   public interface ISmsSender
   {

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.DAL.Implementation
+namespace MentorAbiturienta.DAL.Implementation
 {
   public class SpecializationRepository : GenericRepository<Specialization>, ISpecializationRepository
   {

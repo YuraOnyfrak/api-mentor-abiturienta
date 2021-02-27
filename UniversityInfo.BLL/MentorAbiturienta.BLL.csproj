@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UniversityInfo.DAL\UniversityInfo.DAL.csproj" />
-    <ProjectReference Include="..\UniversityInfo.Shared\UniversityInfo.Shared.csproj" />
+    <ProjectReference Include="..\UniversityInfo.DAL\MentorAbiturienta.DAL.csproj" />
+    <ProjectReference Include="..\UniversityInfo.Shared\MentorAbiturienta.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

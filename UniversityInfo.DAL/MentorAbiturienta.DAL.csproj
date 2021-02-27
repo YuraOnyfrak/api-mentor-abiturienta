@@ -30,7 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UniversityInfo.Shared\UniversityInfo.Shared.csproj" />
+    <ProjectReference Include="..\MentorAbiturienta.Model\MentorAbiturienta.Model.csproj" />
+    <ProjectReference Include="..\UniversityInfo.Shared\MentorAbiturienta.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

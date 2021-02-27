@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.DAL.Implementation
+namespace MentorAbiturienta.DAL.Implementation
 {
   public class EntrantRepository : GenericRepository<Entrant>, IEntrantRepository
   {
-    public EntrantRepository(UniversityInfoContext context) : base(context)
+    public EntrantRepository(MentorAbiturientaContext context) : base(context)
     {
     }
   }

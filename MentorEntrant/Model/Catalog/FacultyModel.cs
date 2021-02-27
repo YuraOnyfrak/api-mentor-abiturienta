@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.DTO.Catalog;
+using MentorAbiturienta.BLL.DTO.Catalog;
 
-namespace UniversityInfo.Model
+namespace MentorAbiturienta.Model
 {
   public class FacultyModel
   {

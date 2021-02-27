@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.BLL.DTO;
-using UniversityInfo.DAL;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Domain;
-using UniversityInfo.Services.Abstractions;
-using UniversityInfo.Shared;
-using UniversityInfo.Shared.Exceptions;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.BLL.DTO;
+using MentorAbiturienta.DAL;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Domain;
+using MentorAbiturienta.Services.Abstractions;
+using MentorAbiturienta.Shared;
+using MentorAbiturienta.Shared.Exceptions;
 
-namespace UniversityInfo.BLL.Implementation.Auth
+namespace MentorAbiturienta.BLL.Implementation.Auth
 {
   public class DefaultAccessDispatcher : IAccessDispatcher
   {
@@ -76,13 +76,7 @@ namespace UniversityInfo.BLL.Implementation.Auth
         RefreshToken refreshToken = await _refreshTokenRepository.GetByIdAsync(refreshTokenId);
 
         if (refreshToken == null)
-          throw new NotFoundException("refresh token not found");
-
-        if (refreshToken.User != null)
-        {
-          if (ChangedUsersList.ChangedUsers.ContainsThreadSafe(refreshToken.User.Id))
-            ChangedUsersList.ChangedUsers.RemoveThreadSafe(refreshToken.User.Id);
-        }
+          throw new NotFoundException("refresh token not found");        
 
         Token token = new Token
         {

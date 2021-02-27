@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.DAL.Abstraction.Auth
+namespace MentorAbiturienta.DAL.Abstraction.Auth
 {
   public interface IValidationTicketRepository : IGenericRepository<ValidationTicket>, IRepository
   {

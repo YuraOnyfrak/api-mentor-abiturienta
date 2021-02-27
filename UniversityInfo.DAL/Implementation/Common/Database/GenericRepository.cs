@@ -5,9 +5,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.DAL.Domain.Common;
+using MentorAbiturienta.DAL.Domain.Common;
 
-namespace UniversityInfo.DAL
+namespace MentorAbiturienta.DAL
 {
   public class GenericRepository<TEntity> : IGenericRepository<TEntity>
           where TEntity : Identifiable
@@ -31,9 +31,9 @@ namespace UniversityInfo.DAL
       _context = context;
     }
 
-        public UniversityInfoContext Context
+        public MentorAbiturientaContext Context
         {
-          get { return _context as UniversityInfoContext; }
+          get { return _context as MentorAbiturientaContext; }
         }
 
         public virtual async Task<IEnumerable<TEntity>> GetAllAsync()

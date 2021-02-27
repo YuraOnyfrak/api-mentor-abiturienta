@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniversityInfo.DAL
+namespace MentorAbiturienta.DAL
 {
-  public abstract class MigrationStorageContextFactory : IDesignTimeDbContextFactory<UniversityInfoContext>
+  public abstract class MigrationStorageContextFactory : IDesignTimeDbContextFactory<MentorAbiturientaContext>
   {
-    public abstract UniversityInfoContext CreateDbContext(string[] args);
+    public abstract MentorAbiturientaContext CreateDbContext(string[] args);
   }
 }

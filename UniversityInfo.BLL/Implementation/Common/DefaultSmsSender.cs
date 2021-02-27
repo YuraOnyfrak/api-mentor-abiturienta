@@ -2,11 +2,11 @@
 using Microsoft.Extensions.Options;
 using System;
 using System.Web;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.BLL.DTO;
-using UniversityInfo.Shared.Options;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.BLL.DTO;
+using MentorAbiturienta.Shared.Options;
 
-namespace UniversityInfo.BLL.Implementation.Common
+namespace MentorAbiturienta.BLL.Implementation.Common
 {
   public class DefaultSmsSender : ISmsSender
   {

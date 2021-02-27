@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.BLL.DTO.Catalog
+namespace MentorAbiturienta.BLL.DTO.Catalog
 {
   public class FacultyDTO
   {

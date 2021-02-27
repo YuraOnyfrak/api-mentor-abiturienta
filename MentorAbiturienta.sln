@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityInfo.DAL", "UniversityInfo.DAL\UniversityInfo.DAL.csproj", "{332A5743-1AA8-4D22-8C84-BBC59AFC4FD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MentorAbiturienta.DAL", "UniversityInfo.DAL\MentorAbiturienta.DAL.csproj", "{332A5743-1AA8-4D22-8C84-BBC59AFC4FD7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityInfo.BLL", "UniversityInfo.BLL\UniversityInfo.BLL.csproj", "{02B76561-5BB6-46BB-AFE2-4D9DA7AC8DF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MentorAbiturienta.BLL", "UniversityInfo.BLL\MentorAbiturienta.BLL.csproj", "{02B76561-5BB6-46BB-AFE2-4D9DA7AC8DF5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityInfo.Shared", "UniversityInfo.Shared\UniversityInfo.Shared.csproj", "{099678A6-A000-4620-B931-06D9991C54E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MentorAbiturienta.Shared", "UniversityInfo.Shared\MentorAbiturienta.Shared.csproj", "{099678A6-A000-4620-B931-06D9991C54E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MentorEntrant", "MentorEntrant\MentorEntrant.csproj", "{0C5F2A06-C0CC-4832-AE44-A9A7564C94DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MentorAbiturienta", "MentorEntrant\MentorAbiturienta.csproj", "{0C5F2A06-C0CC-4832-AE44-A9A7564C94DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MentorAbiturienta.Model", "MentorAbiturienta.Model\MentorAbiturienta.Model.csproj", "{A19B383E-6D2F-4A93-A4F0-AAA14930DEAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0C5F2A06-C0CC-4832-AE44-A9A7564C94DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C5F2A06-C0CC-4832-AE44-A9A7564C94DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C5F2A06-C0CC-4832-AE44-A9A7564C94DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19B383E-6D2F-4A93-A4F0-AAA14930DEAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19B383E-6D2F-4A93-A4F0-AAA14930DEAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19B383E-6D2F-4A93-A4F0-AAA14930DEAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19B383E-6D2F-4A93-A4F0-AAA14930DEAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

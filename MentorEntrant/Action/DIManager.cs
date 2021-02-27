@@ -1,26 +1,26 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.BLL.Abstraction.Auth;
-using UniversityInfo.BLL.Implementation;
-using UniversityInfo.BLL.Implementation.Auth;
-using UniversityInfo.BLL.Implementation.Common;
-using UniversityInfo.DAL;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Abstraction.Auth;
-using UniversityInfo.DAL.Implementation;
-using UniversityInfo.DAL.Implementation.Auth;
-using UniversityInfo.Services.Abstractions;
-using UniversityInfo.Services.Concrete;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.BLL.Abstraction.Auth;
+using MentorAbiturienta.BLL.Implementation;
+using MentorAbiturienta.BLL.Implementation.Auth;
+using MentorAbiturienta.BLL.Implementation.Common;
+using MentorAbiturienta.DAL;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Abstraction.Auth;
+using MentorAbiturienta.DAL.Implementation;
+using MentorAbiturienta.DAL.Implementation.Auth;
+using MentorAbiturienta.Services.Abstractions;
+using MentorAbiturienta.Services.Concrete;
 
-namespace UniversityInfo.Action
+namespace MentorAbiturienta.Action
 {
   public static class DIManager
   {
     public static void Register(IServiceCollection services)
     {
       services.AddScoped<IStorage, Storage>();
-      services.AddScoped<IStorageContext, UniversityInfoContext>();
+      services.AddScoped<IStorageContext, MentorAbiturientaContext>();
 
       services.AddScoped<IUserRepository, UserRepository>();
       services.AddScoped<IValidationTicketRepository, ValidationTicketRepository>();

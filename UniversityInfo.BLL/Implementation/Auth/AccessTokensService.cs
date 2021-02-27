@@ -2,15 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.BLL.Abstraction.Auth;
-using UniversityInfo.DAL;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Abstraction.Auth;
-using UniversityInfo.DAL.Domain;
-using UniversityInfo.Shared;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.BLL.Abstraction.Auth;
+using MentorAbiturienta.DAL;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Abstraction.Auth;
+using MentorAbiturienta.DAL.Domain;
+using MentorAbiturienta.Shared;
 
-namespace UniversityInfo.BLL.Implementation.Auth
+namespace MentorAbiturienta.BLL.Implementation.Auth
 {
   public class AccessTokensService : IAccessTokensService
   {
@@ -57,20 +57,14 @@ namespace UniversityInfo.BLL.Implementation.Auth
         Pin = GeneratePin(),
         IpAddress = IpAddress,
         PhoneNumber = phoneNumber
-      };
-
-      if (user != null)
-      {
-        if (ChangedUsersList.ChangedUsers.ContainsThreadSafe(user.Id))
-          ChangedUsersList.ChangedUsers.RemoveThreadSafe(user.Id);
-      }
+      };         
 
       _validationTicketRepository.AddAsync(ticket);
       _storage.SaveAsync();
 
       // if (_hostingEnvironment.IsProduction() || _hostingEnvironment.IsStaging())
       //{
-       var result = _smsSender.SendSms(phoneNumber, $"Код подтверждения: {1}");// { ticket.Pin}");
+      // var result = _smsSender.SendSms(phoneNumber, $"Код подтверждения: {1}");// { ticket.Pin}");
       // }
 
       // return result.ToString();

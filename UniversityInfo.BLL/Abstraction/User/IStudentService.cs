@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.DTO;
+using MentorAbiturienta.BLL.DTO;
+using MentorAbiturienta.Model;
 
-namespace UniversityInfo.BLL.Abstraction
+namespace MentorAbiturienta.BLL.Abstraction
 {
     public interface IStudentService
     {
         Task<CreatedStudentDTO> UpdateAsync(UpdateStudentDTO entrant);
         Task<CreatedStudentDTO> CreateAsync(CreateStudentDTO entrant);
         Task<StudentDTO> GetAsync();
+        Task<StudentDTO> SearchAsync(SearchStudentModel searchStudentModel);
     }
 }

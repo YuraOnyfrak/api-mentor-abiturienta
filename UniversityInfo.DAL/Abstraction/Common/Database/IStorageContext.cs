@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniversityInfo.DAL
+namespace MentorAbiturienta.DAL
 {
   public interface IStorageContext
   {

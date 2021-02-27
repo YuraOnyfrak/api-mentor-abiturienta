@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Domain;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace UniversityInfo.DAL.Implementation
+namespace MentorAbiturienta.DAL.Implementation
 {
   public class SpecialityRepository : GenericRepository<Speciality>, ISpecialityRepository
   {

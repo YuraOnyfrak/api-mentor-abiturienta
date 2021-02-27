@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniversityInfo.DAL.Domain.Common
+namespace MentorAbiturienta.DAL.Domain.Common
 {
   public class Identifiable
   {

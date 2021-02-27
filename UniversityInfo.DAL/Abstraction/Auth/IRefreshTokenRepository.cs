@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.DAL.Abstraction
+namespace MentorAbiturienta.DAL.Abstraction
 {
   public interface IRefreshTokenRepository : IRepository, IGenericRepository<RefreshToken>
   {

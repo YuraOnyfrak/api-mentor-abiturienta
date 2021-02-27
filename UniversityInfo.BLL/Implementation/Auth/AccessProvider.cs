@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.Linq;
 using System.Security.Claims;
-using UniversityInfo.BLL.Abstraction.Auth;
+using MentorAbiturienta.BLL.Abstraction.Auth;
 
-namespace UniversityInfo.BLL.Implementation.Auth
+namespace MentorAbiturienta.BLL.Implementation.Auth
 {
   public class AccessProvider : IAccessProvider
   {

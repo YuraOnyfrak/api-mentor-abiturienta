@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniversityInfo.BLL.Abstraction.Auth
+namespace MentorAbiturienta.BLL.Abstraction.Auth
 {
   public interface IAccessTokensService
   {

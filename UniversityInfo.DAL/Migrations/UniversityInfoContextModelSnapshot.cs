@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using UniversityInfo.DAL;
+using MentorAbiturienta.DAL;
 
-namespace UniversityInfo.DAL.Migrations
+namespace MentorAbiturienta.DAL.Migrations
 {
-    [DbContext(typeof(UniversityInfoContext))]
-    partial class UniversityInfoContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(MentorAbiturientaContext))]
+    partial class MentorAbiturientaContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -19,7 +19,7 @@ namespace UniversityInfo.DAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.City", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.City", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,7 +34,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("Cities");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.Entrant", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.Entrant", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -46,7 +46,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("Entrants");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.Faculty", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.Faculty", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -66,7 +66,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("Faculties");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.RefreshToken", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.RefreshToken", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -84,7 +84,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("RefreshToken");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.Speciality", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.Speciality", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -106,7 +106,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("Specialties");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.SpecialityByFaculty", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.SpecialityByFaculty", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -129,7 +129,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("SpecialityByFaculty");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.Specialization", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.Specialization", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -149,7 +149,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("Specializations");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.Student", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.Student", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -199,7 +199,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("Students");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.University", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.University", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -219,7 +219,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("Universities");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.User", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -247,7 +247,7 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.ValidationTicket", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.ValidationTicket", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -273,83 +273,83 @@ namespace UniversityInfo.DAL.Migrations
                     b.ToTable("ValidationTickets");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.Faculty", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.Faculty", b =>
                 {
-                    b.HasOne("UniversityInfo.DAL.Domain.University", "University")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.University", "University")
                         .WithMany()
                         .HasForeignKey("UniversityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.RefreshToken", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.RefreshToken", b =>
                 {
-                    b.HasOne("UniversityInfo.DAL.Domain.User", "User")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.SpecialityByFaculty", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.SpecialityByFaculty", b =>
                 {
-                    b.HasOne("UniversityInfo.DAL.Domain.Faculty", "Faculty")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.Faculty", "Faculty")
                         .WithMany()
                         .HasForeignKey("FacultyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("UniversityInfo.DAL.Domain.Speciality", "Speciality")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.Speciality", "Speciality")
                         .WithOne("SpecialityByFaculty")
-                        .HasForeignKey("UniversityInfo.DAL.Domain.SpecialityByFaculty", "SpecialityId")
+                        .HasForeignKey("MentorAbiturienta.DAL.Domain.SpecialityByFaculty", "SpecialityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.Specialization", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.Specialization", b =>
                 {
-                    b.HasOne("UniversityInfo.DAL.Domain.SpecialityByFaculty", "SpecialityByFaculty")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.SpecialityByFaculty", "SpecialityByFaculty")
                         .WithMany()
                         .HasForeignKey("SpecialityByFacultyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.Student", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.Student", b =>
                 {
-                    b.HasOne("UniversityInfo.DAL.Domain.Faculty", "Faculty")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.Faculty", "Faculty")
                         .WithMany()
                         .HasForeignKey("FacultyId");
 
-                    b.HasOne("UniversityInfo.DAL.Domain.SpecialityByFaculty", "SpecialityByFaculty")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.SpecialityByFaculty", "SpecialityByFaculty")
                         .WithMany()
                         .HasForeignKey("SpecialityByFacultyId");
 
-                    b.HasOne("UniversityInfo.DAL.Domain.Specialization", "Specialization")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.Specialization", "Specialization")
                         .WithMany()
                         .HasForeignKey("SpecializationId");
 
-                    b.HasOne("UniversityInfo.DAL.Domain.University", "University")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.University", "University")
                         .WithMany()
                         .HasForeignKey("UniversityId");
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.University", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.University", b =>
                 {
-                    b.HasOne("UniversityInfo.DAL.Domain.City", "City")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.City", "City")
                         .WithMany()
                         .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("UniversityInfo.DAL.Domain.User", b =>
+            modelBuilder.Entity("MentorAbiturienta.DAL.Domain.User", b =>
                 {
-                    b.HasOne("UniversityInfo.DAL.Domain.Entrant", "Entrant")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.Entrant", "Entrant")
                         .WithMany()
                         .HasForeignKey("EntrantId");
 
-                    b.HasOne("UniversityInfo.DAL.Domain.Student", "Student")
+                    b.HasOne("MentorAbiturienta.DAL.Domain.Student", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId");
                 });

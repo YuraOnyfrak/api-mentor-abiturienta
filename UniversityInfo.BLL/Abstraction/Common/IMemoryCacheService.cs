@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace UniversityInfo.Services.Abstractions
+namespace MentorAbiturienta.Services.Abstractions
 {
   public interface IMemoryCacheService
   {

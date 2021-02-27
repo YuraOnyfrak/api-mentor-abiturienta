@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.DAL.Domain.Common;
+using MentorAbiturienta.DAL.Domain.Common;
 
-namespace UniversityInfo.DAL
+namespace MentorAbiturienta.DAL
 {
   public interface IGenericRepository<TEntity>
           where TEntity : Identifiable

@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.Shared.Options;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.Shared.Options;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,7 +12,7 @@ using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace UniversityInfo.BLL.Implementation.Auth
+namespace MentorAbiturienta.BLL.Implementation.Auth
 {
   public class JwtService : IJwtService
   {

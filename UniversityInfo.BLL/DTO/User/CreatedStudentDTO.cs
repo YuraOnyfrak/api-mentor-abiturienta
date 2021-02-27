@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.BLL.DTO
+namespace MentorAbiturienta.BLL.DTO
 {
     public class CreatedStudentDTO
     {

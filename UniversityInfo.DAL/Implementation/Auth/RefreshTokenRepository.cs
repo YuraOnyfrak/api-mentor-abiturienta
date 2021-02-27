@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.DAL.Implementation.Auth
+namespace MentorAbiturienta.DAL.Implementation.Auth
 {
   public class RefreshTokenRepository : GenericRepository<RefreshToken>, IRefreshTokenRepository
   {

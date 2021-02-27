@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace UniversityInfo.DAL.Migrations
+namespace MentorAbiturienta.DAL.Migrations
 {
     public partial class SpecialityByFacultyId : Migration
     {

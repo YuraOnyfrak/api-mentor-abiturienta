@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using UniversityInfo.DAL.Domain;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using MentorAbiturienta.DAL.Domain;
+using MentorAbiturienta.DAL.DTO;
+using MentorAbiturienta.Model;
 
-namespace UniversityInfo.DAL.Abstraction
+namespace MentorAbiturienta.DAL.Abstraction
 {
-  public interface IUserRepository : IGenericRepository<User>, IRepository
+    public interface IUserRepository : IGenericRepository<User>, IRepository
   {
-    User GetByPhone(string phoneNumber);
-    bool IsExist(string phoneNumber);
-  }
+        User GetByPhone(string phoneNumber);
+        bool IsExist(string phoneNumber);
+        Task<IEnumerable<SearchStudentDto>> SearchAsync(SearchStudentModel searchStudentModel);
+    }
 }

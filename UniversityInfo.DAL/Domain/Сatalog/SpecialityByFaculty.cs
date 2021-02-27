@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniversityInfo.DAL.Domain
+namespace MentorAbiturienta.DAL.Domain
 {
   public class SpecialityByFaculty
   {

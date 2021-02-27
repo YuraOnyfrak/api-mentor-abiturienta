@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.DTO.Catalog;
+using MentorAbiturienta.BLL.DTO.Catalog;
 
-namespace UniversityInfo.BLL.Abstraction
+namespace MentorAbiturienta.BLL.Abstraction
 {
   public interface IFacultyService
   {

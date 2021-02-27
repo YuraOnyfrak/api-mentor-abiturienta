@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UniversityInfo.DAL.Domain.Common;
+using MentorAbiturienta.DAL.Domain.Common;
 
-namespace UniversityInfo.DAL.Domain
+namespace MentorAbiturienta.DAL.Domain
 {
   public class Entrant : Identifiable
   {

@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.BLL.DTO.Catalog;
-using UniversityInfo.DAL.Abstraction;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.BLL.DTO.Catalog;
+using MentorAbiturienta.DAL.Abstraction;
 
-namespace UniversityInfo.BLL.Implementation
+namespace MentorAbiturienta.BLL.Implementation
 {
   public class FacultyService : IFacultyService
   {

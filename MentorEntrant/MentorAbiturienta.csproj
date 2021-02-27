@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\IT\Development\Program\Project\UniversityInfo\MentorEntrant\MentorEntrant.xml</DocumentationFile>
+    <DocumentationFile>.\MentorEntrant\MentorAbiturienta.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,9 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UniversityInfo.BLL\UniversityInfo.BLL.csproj" />
-    <ProjectReference Include="..\UniversityInfo.DAL\UniversityInfo.DAL.csproj" />
-    <ProjectReference Include="..\UniversityInfo.Shared\UniversityInfo.Shared.csproj" />
+    <ProjectReference Include="..\MentorAbiturienta.Model\MentorAbiturienta.Model.csproj" />
+    <ProjectReference Include="..\UniversityInfo.BLL\MentorAbiturienta.BLL.csproj" />
+    <ProjectReference Include="..\UniversityInfo.DAL\MentorAbiturienta.DAL.csproj" />
+    <ProjectReference Include="..\UniversityInfo.Shared\MentorAbiturienta.Shared.csproj" />
   </ItemGroup>
 
 

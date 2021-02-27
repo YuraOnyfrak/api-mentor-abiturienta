@@ -1,18 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System.Reflection;
-using UniversityInfo.DAL.Domain;
-using UniversityInfo.Shared.Options;
+using MentorAbiturienta.DAL.Domain;
+using MentorAbiturienta.Shared.Options;
 
-namespace UniversityInfo.DAL
+namespace MentorAbiturienta.DAL
 {
-  public class UniversityInfoContext : DbContext, IStorageContext
+  public class MentorAbiturientaContext : DbContext, IStorageContext
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="StorageContext">StorageContext</see> class.
     /// </summary>
     /// <param name="connectionStringProvider">The connection string that is used to connect to the physical storage.</param>
-    public UniversityInfoContext(IOptions<StorageContextOptions> options)
+    public MentorAbiturientaContext(IOptions<StorageContextOptions> options)
     {
       this.ConnectionString = options.Value.ConnectionString;
     }

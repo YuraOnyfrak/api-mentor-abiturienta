@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 
-namespace UniversityInfo.BLL.Abstraction.Auth
+namespace MentorAbiturienta.BLL.Abstraction.Auth
 {
   public interface IAccessProvider
   {

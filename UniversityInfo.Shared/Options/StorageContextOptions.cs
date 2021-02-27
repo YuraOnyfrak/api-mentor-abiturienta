@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniversityInfo.Shared.Options
+namespace MentorAbiturienta.Shared.Options
 {
   public class StorageContextOptions
   {

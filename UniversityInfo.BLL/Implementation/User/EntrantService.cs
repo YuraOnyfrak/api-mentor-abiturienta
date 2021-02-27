@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.BLL.DTO;
-using UniversityInfo.DAL;
-using UniversityInfo.DAL.Abstraction;
-using UniversityInfo.DAL.Domain;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.BLL.DTO;
+using MentorAbiturienta.DAL;
+using MentorAbiturienta.DAL.Abstraction;
+using MentorAbiturienta.DAL.Domain;
 
-namespace UniversityInfo.BLL.Implementation
+namespace MentorAbiturienta.BLL.Implementation
 {
   public class EntrantService : IEntrantService
   {

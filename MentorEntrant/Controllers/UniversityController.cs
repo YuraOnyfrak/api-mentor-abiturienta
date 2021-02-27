@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using UniversityInfo.BLL.Abstraction;
-using UniversityInfo.Model;
+using MentorAbiturienta.BLL.Abstraction;
+using MentorAbiturienta.Model;
 
-namespace UniversityInfo.Controllers
+namespace MentorAbiturienta.Controllers
 {
 
     //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]    

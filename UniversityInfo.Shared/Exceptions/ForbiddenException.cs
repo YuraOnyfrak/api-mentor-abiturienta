@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniversityInfo.Shared.Exceptions
+namespace MentorAbiturienta.Shared.Exceptions
 {
   public class ForbiddenException : Exception
   {

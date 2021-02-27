@@ -10,11 +10,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using UniversityInfo.Action;
-using UniversityInfo.DAL;
-using UniversityInfo.Shared.Options;
+using MentorAbiturienta.Action;
+using MentorAbiturienta.DAL;
+using MentorAbiturienta.Shared.Options;
 
-namespace MentorEntrant
+namespace MentorAbiturienta
 {
   public class Startup
   {
@@ -42,14 +42,14 @@ namespace MentorEntrant
         options.ConnectionString = connectionString;
       });
 
-      services.AddDbContext<UniversityInfoContext>(options => options.UseSqlServer(connectionString));
+      services.AddDbContext<MentorAbiturientaContext>(options => options.UseSqlServer(connectionString));
 
       // Register the Swagger generator, defining 1 or more Swagger documents
       services.AddSwaggerGen(c =>
       {
         c.SwaggerDoc("v1", new OpenApiInfo
         {
-          Title = "UniversityInfo API",
+          Title = "MentorAbiturienta API",
           Version = "v1"
         });
 
@@ -73,10 +73,10 @@ namespace MentorEntrant
         });
 
         //if (hostingEnvironment.IsDevelopment())
-        // c.IncludeXmlComments(Path.Combine(System.AppContext.BaseDirectory, "UniversityInfo.Api.xml"));
+        // c.IncludeXmlComments(Path.Combine(System.AppContext.BaseDirectory, "MentorAbiturienta.Api.xml"));
 
         // else
-        c.IncludeXmlComments(Path.Combine(System.AppContext.BaseDirectory, "MentorEntrant.xml"));
+        c.IncludeXmlComments(Path.Combine(System.AppContext.BaseDirectory, "MentorAbiturienta.xml"));
 
         c.CustomSchemaIds(x => x.FullName);
       });
